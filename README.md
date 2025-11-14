@@ -61,17 +61,6 @@ practica1/
    npx http-server
    ```
 
-## Funcionalitats implementades
-- [x] Estructura HTML semàntica
-- [x] Disseny responsive amb mobile-first
-- [x] Navegació accessible amb sticky header
-- [x] Formularis validats amb HTML5
-- [x] Animacions de scroll amb CSS animation-timeline
-- [x] Arquitectura CSS modular per components
-- [x] CSS organitzat i comentat per seccions
-- [x] Sistema de temes amb CSS custom properties
-- [x] Sidebar sticky amb navegació interna
-
 ## Validació
 - [x] Validació HTML W3C (amb petites millores pendents)
 - [x] Validació CSS W3C 
