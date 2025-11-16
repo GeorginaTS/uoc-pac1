@@ -9,6 +9,7 @@
   --color-secondary: #004346;
   --color-tertiary: #508991;
   --color-accent: #44a1a0;
+  --color-grey: rgb(201, 201, 201);
 
   --color-danger: #f87171;
   --color-success: var(--color-accent);
@@ -102,7 +103,8 @@ h4 {
 h5 {
   font-size: 1rem;
   color: var(--color-text-primary);
-  margin-top: 0.5rem;
+  margin:0;
+  padding: 0;
 }
 hr {
   width: 100%;
@@ -113,7 +115,7 @@ hr {
   background-color: var(--color-tertiary);
 }
 i {
-  color: var(--color-tertiary);
+  color: grey;
 }
 a {
   color: var(--color-text-main);
@@ -211,13 +213,43 @@ aside #skills > .skills-container > article {
 #education > ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   > li > article {
     width: 100%;
     display: grid;
     grid-template-columns: 2rem 1fr;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 0;
+    > div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+  }
+}
+/* work experience */
+
+#work-experience > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  > li > article {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 0;
+    > div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
   }
 }
 /* certifications */
@@ -291,6 +323,7 @@ footer {
   font-weight: bold;
   width: 1rem;
   height: 1rem;
+  aspect-ratio: 1/1;
   background-color: var(--color-text-secondary);
   border-radius: 50%;
   display: inline-block;
@@ -300,11 +333,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 1rem;
   height: 100%;
+
   > span {
-    border-right: 1px solid orange;
-    width: 1px;
+    width: 0.5px;
     height: 100%;
-    background-color: var(--color-secondary);
+    background-color: var(--color-text-secondary);
+    text-align: center;
   }
 }
